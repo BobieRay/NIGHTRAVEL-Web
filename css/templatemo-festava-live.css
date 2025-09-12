@@ -233,7 +233,7 @@ strong {
 }
 
 .section-overlay + .container {
-  position: relative;
+  /*position: relative;*/
 }
 
 .tab-content {
@@ -506,7 +506,7 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
+  background-image: url('../images/ver_cup_English.png');
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
@@ -590,12 +590,19 @@ strong {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+
 }
 
 .artists-image {
-  border-radius: var(--border-radius-medium);
-  display: block;
+  /*border-radius: var(--border-radius-medium);*/
+  /*display: block;*/
+  flex: 1px;
+  text-align: center;
   width: 100%;
+
 }
 
 .artists-thumb:hover .artists-hover {
@@ -644,7 +651,7 @@ strong {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-image: url('../images/無題656_20250704141502.png');
   background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
@@ -885,7 +892,7 @@ strong {
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   display: block;
-  margin-right: 10px;
+  margin-right: 100px;
   text-align: center;
   width: 35px;
   height: 35px;
