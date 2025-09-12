@@ -268,8 +268,9 @@ https://templatemo.com/tm-583-festava-live
                     <div class="col-lg-5 col-12">
                         <div class="artists-thumb-stage1-enemy">
                             <div class="artists-image-wrap">
-                                <img src="images/ダンボールA_20250911094751.png"
+                                <img src="images/スクリーンショット%202025-09-12%20105132.png"
                                      class="artists-image img-fluid">
+                                <button onclick="openSlideshow(0)">詳細</button>
                             </div>
                             <div class="artists-hover">
                                 <p>
@@ -278,101 +279,21 @@ https://templatemo.com/tm-583-festava-live
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb-stage1-enemy">
-                            <div class="artists-image-wrap">
-                                <img src="images/ダンボールB_20250911094816.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb-stage1-enemy">
-                            <div class="artists-image-wrap">
-                                <img src="images/ダンボールC_20250911094829.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/信号機ロボ_20250911094944.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/自販機ロボ_20250911095009.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/配達ロボ_20250911094956.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/剣士.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/剣士.png"
-                                     class="artists-image img-fluid">
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- モーダル本体 -->
+    <div id="modal">
+        <img id="slide" src="">
+        <div class="controls">
+            <button onclick="prevSlide()">◀ 前へ</button>
+            <button onclick="nextSlide()">次へ ▶</button>
+            <button onclick="closeSlideshow()">閉じる ✖</button>
+        </div>
+    </div>
 
 
     <section class="pricing-section section-padding section-bg" id="section_5">
@@ -687,6 +608,7 @@ T e m p l a t e M o
 <script src="js/jquery.sticky.js"></script>
 <script src="js/click-scroll.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/SlideShow.js"></script>
 
 </body>
 
