@@ -233,7 +233,7 @@ strong {
 }
 
 .section-overlay + .container {
-  /*position: relative;*/
+  position: relative;
 }
 
 .tab-content {
@@ -630,53 +630,55 @@ strong {
 .modal {
   display: none;
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
-/* スライダー部分 */
-.slider {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  height: 500px;
-  background: #000;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.slider img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.9); !important;/* 背景黒＆透過 */
+
 }
-.slider img.active {
-  display: block;
+
+.modal-content {
+  position: relative;
+  max-width: 60%;
+  max-height: 80%;
 }
-/* 矢印ボタン */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+
+.modal-content img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
 }
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
-/* 閉じるボタン */
+
 .close {
   position: absolute;
-  top: 10px; right: 20px;
-  font-size: 30px;
+  top: 20px; right: 40px;
   color: white;
+  font-size: 40px;
   cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  user-select: none;
+}
+
+.prev { left: -60px; }
+.next { right: -60px; }
+
+.counter {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-size: 10px;
 }
 
 .artists-thumb-stage1-enemy {
@@ -733,7 +735,7 @@ strong {
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 20px;
+  margin:40px;
   padding: 35px;
   transition: all 0.5s ease;
   transform: translateY(100%);

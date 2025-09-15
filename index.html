@@ -270,7 +270,38 @@ https://templatemo.com/tm-583-festava-live
                             <div class="artists-image-wrap">
                                 <img src="images/スクリーンショット%202025-09-12%20105132.png"
                                      class="artists-image img-fluid">
-                                <button onclick="openSlideshow(0)">詳細</button>
+                                <!-- 詳細ボタン -->
+                                <button onclick="openSlideshow(0)">ステージ1 敵一覧</button>
+                            </div>
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb-stage1-enemy">
+                            <div class="artists-image-wrap">
+                                <img src="images/ステージ2.png"
+                                     class="artists-image img-fluid">
+                                <!-- 詳細ボタン -->
+                                <button onclick="openSlideshow(1)">ステージ2 敵一覧</button>
+                            </div>
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb-stage1-enemy">
+                            <div class="artists-image-wrap">
+                                <img src="images/ステージ2.png"
+                                     class="artists-image img-fluid">
+                                <!-- 詳細ボタン -->
+                                <button onclick="openSlideshow(2)">ステージ3 敵一覧</button>
                             </div>
                             <div class="artists-hover">
                                 <p>
@@ -285,13 +316,19 @@ https://templatemo.com/tm-583-festava-live
         </div>
     </section>
 
-    <!-- モーダル本体 -->
-    <div id="modal">
-        <img id="slide" src="">
-        <div class="controls">
-            <button onclick="prevSlide()">◀ 前へ</button>
-            <button onclick="nextSlide()">次へ ▶</button>
-            <button onclick="closeSlideshow()">閉じる ✖</button>
+    <!-- モーダル -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeSlideshow()">&times;</span>
+        <div class="artists-hover">
+            <p>
+                <strong>Name:</strong>
+            </p>
+        </div>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="slideshow">
+            <div id="counter" class="counter"></div>
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
     </div>
 
