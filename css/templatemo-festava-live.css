@@ -644,7 +644,7 @@ strong {
   display: none;
   position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
+  left: 10px; top: 0;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -725,7 +725,7 @@ button:hover {
   text-align: center;
 }
 
-.artists-thumb-stage1-enemy {
+/*.artists-thumb-stage1-enemy {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
@@ -734,7 +734,7 @@ button:hover {
   height: auto;
   flex-direction: column;
   justify-content: center;
-}
+}*/
 
 .artists-thumb-stage2-enemy {
   position: relative;

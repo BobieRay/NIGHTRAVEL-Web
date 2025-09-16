@@ -70,6 +70,13 @@ function openSlideshow(setIndex) {
 function updateSlides() {
     const img = document.getElementById("modalImage");
     const text = document.getElementById("enemy_name");
+    if(currentSet==1&&currentIndex==4){
+        img.style.width="60%";
+    }
+    else
+    {
+        img.style.width="40%";
+    }
     img.src = imageSets[currentSet][currentIndex];
     text.innerText = enemy_name[currentSet][currentIndex];
     document.getElementById("counter").textContent =
