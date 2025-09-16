@@ -53,8 +53,18 @@ body {
   TYPOGRAPHY               
 -----------------------------------------*/
 
+h1{
+  color: black;
+  margin-top:auto;
+}
+h2{
+  color: white;
+}
+h3{
+  color: black;
+}
+
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -97,7 +107,9 @@ h6 {
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  /*font-weight: var(--font-weight-light);*/
+  font-weight: var(--font-weight-bold);
+
 }
 
 ul li {
@@ -218,7 +230,8 @@ strong {
 }
 
 .section-bg {
-  background-color: var(--section-bg-color);
+  /*background-color: var(--section-bg-color);*/
+  background-color: darkgrey;
 }
 
 .section-overlay {
@@ -264,7 +277,7 @@ strong {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus, 
 .nav-tabs .nav-link:hover {
-  background: var(--white-color);
+  background: ivory;
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--primary-color);
 }
@@ -506,7 +519,7 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/スクリーンショット 2025-09-12 105224.png');
+  background-image: url('../images/ステージ1(近いver).png');
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
@@ -686,6 +699,7 @@ strong {
   color: black;
   margin-top: 10px;
   font-size: 30px;
+  font-weight: var(--font-weight-bold);
 }
 
 button {
@@ -881,7 +895,8 @@ button:hover {
   PRICING              
 -----------------------------------------*/
 .pricing-thumb {
-  border: 5px dotted var(--dark-color);
+  border: 5px dotted navy;
+  /*border: 5px dotted var(--dark-color);*/
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
