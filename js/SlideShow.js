@@ -10,10 +10,11 @@ const imageSets = [
         "images/ステージ1/ボックスガイスト(射出状態).png"
     ],
     [
-        "images/ステージ2/missileMachine.png",
+        "images/ステージ2/ミサイルマシン.png",
         "images/ステージ2/ガードボット.png",
         "images/ステージ2/ドローン.png",
-        "images/ステージ2/サイバードッグ.png"
+        "images/ステージ2/サイバードッグ.png",
+        "images/ステージ2/フルメタルワーム.png",
     ],
     [
         "images/ステージ3/カルカス.png",
@@ -25,14 +26,32 @@ const imageSets = [
     ]
 ];
 
-
-/*function showSlide(index) {
-    const modalImage = document.getElementById("modalImage");
-    modalImage.src = imageSets[currentSet][index];
-    document.getElementById("counter").textContent =
-        `${index + 1} / ${imageSets[currentSet].length}`;
-}*/
-
+const enemy_name = [
+    [
+        "ハコノフA",
+        "ハコノフB",
+        "ハコノフC",
+        "ヴェンドボット",
+        "デリボット",
+        "シグナボット",
+        "ボックスガイスト(射出状態)"
+    ],
+    [
+        "ミサイルマシン",
+        "ガードボット",
+        "ドローン",
+        "サイバードッグ",
+        "フルメタルワーム",
+    ],
+    [
+        "カルカス",
+        "スレイド",
+        "ノードコア",
+        "ブレイズ",
+        "ヴァルクス(第1形態)",
+        "ヴァルクス(第2形態)"
+    ]
+];
 
 let currentSet = 0;
 let currentIndex = 0;
@@ -44,13 +63,11 @@ function openSlideshow(setIndex) {
     document.getElementById("modal").style.display = "flex";
 }
 
-function closeSlideshow() {
-    document.getElementById("modal").style.display = "none";
-}
-
 function updateSlides() {
     const img = document.getElementById("modalImage");
+    const text = document.getElementById("enemy_name");
     img.src = imageSets[currentSet][currentIndex];
+    text.innerText = enemy_name[currentSet][currentIndex];
     document.getElementById("counter").textContent =
         `${currentIndex + 1} / ${imageSets[currentSet].length}`;
 }

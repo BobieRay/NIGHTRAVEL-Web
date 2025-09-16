@@ -264,53 +264,55 @@ https://templatemo.com/tm-583-festava-live
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="text-white mb-4">Enemy</h1>
-
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb-stage1-enemy">
-                            <div class="artists-image-wrap">
-                                <img src="images/スクリーンショット%202025-09-12%20105132.png"
-                                     class="artists-image img-fluid">
-                                <!-- 詳細ボタン -->
-                                <button onclick="openSlideshow(0)">ステージ1 敵一覧</button>
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-12">
+                    <div class="artists-thumb-stage1-enemy">
+                        <div class="artists-image-wrap">
+                            <img src="images/スクリーンショット%202025-09-12%20105132.png"
+                                 class="artists-image img-fluid">
+                            <!-- 詳細ボタン -->
+                            <button onclick="openSlideshow(0)">ステージ1 敵一覧</button>
+                        </div>
+                        <div class="artists-hover">
+                            <p>
+                                <strong>Name:</strong>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb-stage1-enemy">
-                            <div class="artists-image-wrap">
-                                <img src="images/ステージ2.png"
-                                     class="artists-image img-fluid">
-                                <!-- 詳細ボタン -->
-                                <button onclick="openSlideshow(1)">ステージ2 敵一覧</button>
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <div class="artists-thumb-stage1-enemy">
+                        <div class="artists-image-wrap">
+                            <img src="images/ステージ2.png"
+                                 class="artists-image img-fluid">
+                            <!-- 詳細ボタン -->
+                            <button onclick="openSlideshow(1)">ステージ2 敵一覧</button>
+                        </div>
+                        <div class="artists-hover">
+                            <p>
+                                <strong>Name:</strong>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb-stage1-enemy">
-                            <div class="artists-image-wrap">
-                                <img src="images/ステージ2.png"
-                                     class="artists-image img-fluid">
-                                <!-- 詳細ボタン -->
-                                <button onclick="openSlideshow(2)">ステージ3 敵一覧</button>
-                            </div>
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-5 col-12">
+                    <div class="artists-thumb-stage1-enemy">
+                        <div class="artists-image-wrap">
+                            <img src="images/ステージ2.png"
+                                 class="artists-image img-fluid">
+                            <!-- 詳細ボタン -->
+                            <button onclick="openSlideshow(2)">ステージ3 敵一覧</button>
+                        </div>
+                        <div class="artists-hover">
+                            <p>
+                                <strong>Name:</strong>
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -318,20 +320,16 @@ https://templatemo.com/tm-583-festava-live
 
     <!-- モーダル -->
     <div id="modal" class="modal">
-        <span class="close" onclick="closeSlideshow()">&times;</span>
-        <div class="artists-hover">
-            <p>
-                <strong>Name:</strong>
-            </p>
-        </div>
+        <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
         <div class="modal-content">
             <img id="modalImage" src="" alt="slideshow">
-            <div id="counter" class="counter"></div>
+            <div id="enemy_name" class="enemy_name">
+            </div>
             <a class="prev" onclick="prevSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
+            <div id="counter" class="counter"></div>
         </div>
     </div>
-
 
     <section class="pricing-section section-padding section-bg" id="section_5">
         <div class="container">

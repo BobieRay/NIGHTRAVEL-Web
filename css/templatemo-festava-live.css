@@ -648,8 +648,8 @@ strong {
 
 .modal-content img {
   width: 40%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  /*border-radius: 8px;*/
   margin: 0 auto;
 }
 
@@ -677,8 +677,38 @@ strong {
 .counter {
   text-align: center;
   color: white;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.enemy_name {
+  text-align: center;
+  color: black;
   margin-top: 10px;
-  font-size: 10px;
+  font-size: 30px;
+}
+
+button {
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* グラデーション */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 影で立体感 */
+  transition: transform 0.2s, box-shadow 0.2s;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+button:hover {
+  transform: scale(1.05); /* ホバーで少し拡大 */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  justify-content: center;
+  text-align: center;
 }
 
 .artists-thumb-stage1-enemy {
