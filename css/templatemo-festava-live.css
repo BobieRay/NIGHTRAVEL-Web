@@ -245,6 +245,7 @@ strong {
   opacity: 0.35;
 }
 
+
 .section-overlay + .container {
   position: relative;
 }
@@ -528,8 +529,9 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
-  height: 40%;
-  width: 60%;
+  height: 50%;
+  width: 70%;
+  margin-top: -50px;
 
 }
 
@@ -814,8 +816,8 @@ button:hover {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/無題656_20250704141502.png');
-  background-color: #242424;
+  background-image: url('../images/');
+  background-color: #4d5154;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
