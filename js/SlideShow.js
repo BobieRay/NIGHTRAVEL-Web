@@ -70,12 +70,21 @@ function openSlideshow(setIndex) {
 function updateSlides() {
     const img = document.getElementById("modalImage");
     const text = document.getElementById("enemy_name");
-    if(currentSet==1&&currentIndex==4){
+    if(currentSet==1&&currentIndex==4)
+    {
         img.style.width="60%";
+    }
+    else if(currentSet==2&&currentIndex==5)
+    {
+        img.style.width="60%";
+    }
+    else if(currentSet==2&&currentIndex==3)
+    {
+        img.style.width="45%";
     }
     else
     {
-        img.style.width="40%";
+        img.style.width="35%";
     }
     img.src = imageSets[currentSet][currentIndex];
     text.innerText = enemy_name[currentSet][currentIndex];
