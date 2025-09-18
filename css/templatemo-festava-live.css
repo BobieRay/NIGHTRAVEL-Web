@@ -45,7 +45,8 @@ https://templatemo.com/tm-583-festava-live
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
+  overflow-x: hidden;
 }
 
 
@@ -231,7 +232,7 @@ strong {
 
 .section-bg {
   /*background-color: var(--section-bg-color);*/
-  background-color: darkgrey;
+  background-color: black;
 }
 
 .section-overlay {
@@ -510,7 +511,7 @@ strong {
 .hero-section .container {
   position: relative;
   z-index: 2;
-  height: 100%;
+  min-height: 100vh;
   padding-bottom: 50px;
 }
 
@@ -527,6 +528,7 @@ strong {
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .about-section p{
@@ -577,7 +579,7 @@ strong {
 }
 
 .about-text-wrap {
-  /*position: relative;*/
+  position: relative;
   display: flex;
   margin-top: 100px;
   margin-left: 10px;
@@ -685,7 +687,7 @@ strong {
 
 .modal {
   display: none;
-  position: fixed;
+  /*position: fixed;*/
   z-index: 1000;
   left: 10px; top: 0;
   width: 100%;
@@ -756,7 +758,7 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 影で立体感 */
   transition: transform 0.2s, box-shadow 0.2s;
-  /*margin-left: 130px;*/
+  margin-left: 90px;
   /*margin: 0 auto;*/
   justify-content: flex-start;
   
@@ -769,23 +771,23 @@ button:hover {
   text-align: center;
 }
 
-/*.artists-thumb-stage1-enemy {
+.artists-thumb-stage1-enemy {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   flex-direction: column;
   justify-content: center;
-}*/
+}
 
-/*.artists-thumb-stage2-enemy {
+.artists-thumb-stage2-enemy {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   flex-direction: column;
   justify-content: center;
@@ -796,18 +798,21 @@ button:hover {
   overflow: hidden;
   margin-bottom: 30px;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   flex-direction: column;
   justify-content: center;
-}*/
+}
 
 .artists-image {
-  /*border-radius: var(--border-radius-medium);*/
-  /*display: block;*/
+  border-radius: var(--border-radius-medium);
+  display: block;
   flex: 1px;
   text-align: center;
-  width: 110%;
+  width: 100%;!important;
+  max-width: 100%;!important;
+  height: auto;
+
 
 }
 
@@ -858,8 +863,8 @@ button:hover {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/');
-  background-color: #4d5154;
+  /*background-image: url('../images/');*/
+  background-color:darkgray;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1141,7 +1146,7 @@ button:hover {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
-/*@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   h1 {
     font-size: 62px;
   }
@@ -1164,13 +1169,13 @@ button:hover {
 
   h6 {
     font-size: 18px;
-  }*/
+  }
 
   .section-padding {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -1185,7 +1190,7 @@ button:hover {
 
   .hero-section {
     /*padding-top: 150px;*/
-
+    /*min-height: 100vh;*/
   }
 
   .pricing-thumb {
@@ -1200,7 +1205,7 @@ button:hover {
     padding: 20px;
   }
 
-  .schedule-table tr, 
+  .schedule-table tr,
   .schedule-table td {
     padding: 25px;
   }
@@ -1214,32 +1219,33 @@ button:hover {
   }
 
 
-/*@media screen and (max-width: 767px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-}*/
-
-/*@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 52px;
+  @media screen and (max-width: 767px) {
+    .custom-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
   }
 
-  h2 {
-    font-size: 28px;
-  }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 52px;
+    }
 
-  h3 {
-    font-size: 26px;
-  }
+    h2 {
+      font-size: 28px;
+    }
 
-  h4 {
-    font-size: 22px;
-  }
+    h3 {
+      font-size: 26px;
+    }
 
-  h5 {
-    font-size: 20px;
+    h4 {
+      font-size: 22px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
   }
-}*/
+}
 
