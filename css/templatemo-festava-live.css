@@ -551,22 +551,22 @@ strong {
   border-radius: var(--border-radius-medium);
   height: 50%;
   width: 70%;
-  margin-top: -100px;
-
+  margin-top: -80px;
 }
 .about-image-icon{
   border-radius: var(--border-radius-medium);
   height: 40%;
   width: 50%;
   margin-top: -50px;
+  /*margin-left: 100px;*/
 }
 .social-share{
   justify-content: center;
   text-align: center;
 }
-.social-share-p{
-  font-size: 60px;
-  margin-top: -10px;
+.social-share p{
+  font-size: 40px;
+  margin-top: 0;
   justify-content: center;
 }
 .about-image-icon:hover{
@@ -756,9 +756,10 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 影で立体感 */
   transition: transform 0.2s, box-shadow 0.2s;
-  justify-content: center;
-  text-align: center;
-  margin-left: 100px;
+  /*margin-left: 130px;*/
+  /*margin: 0 auto;*/
+  justify-content: flex-start;
+  
 }
 
 button:hover {
