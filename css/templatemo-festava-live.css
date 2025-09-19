@@ -532,6 +532,9 @@ strong {
   position: relative;
 }
 .about-section p{
+  width: 900px;
+  height: auto;
+  font-size: 20px;
   margin-left: auto;
 }
 
@@ -540,15 +543,17 @@ strong {
   height: 50%;
   width: 70%;
   margin-top: -50px;
-  margin-left: -70px;
+  /*margin: auto;*/
+  margin-left: 250px;
+
 }
-.about-image-ガンナー {
+/*.about-image-ガンナー {
   border-radius: var(--border-radius-medium);
   height: 50%;
   width: 70%;
   margin-top: -50px;
   margin-left: -10px;
-}
+}*/
 .about-image-title {
   border-radius: var(--border-radius-medium);
   height: 50%;
