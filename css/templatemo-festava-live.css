@@ -557,10 +557,15 @@ strong {
 }
 .about-image-icon{
   border-radius: var(--border-radius-medium);
-  height: 40%;
-  width: 50%;
-  margin-top: -50px;
+  height: auto;
+  width: 30%;
+  margin-top: 0;
   /*margin-left: 100px;*/
+}
+.about-image-X-icon{
+  width: 200%;
+  margin: 0 auto;
+  margin-top:-5px;
 }
 .social-share{
   justify-content: center;
@@ -758,9 +763,8 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 影で立体感 */
   transition: transform 0.2s, box-shadow 0.2s;
-  margin-left: 90px;
-  /*margin: 0 auto;*/
-  justify-content: flex-start;
+  margin: 0 auto;
+  display: flex;
   
 }
 
@@ -812,8 +816,6 @@ button:hover {
   width: 100%;!important;
   max-width: 100%;!important;
   height: auto;
-
-
 }
 
 .artists-thumb:hover .artists-hover {
@@ -1100,21 +1102,21 @@ button:hover {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: black;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  /*color: var(--white-color);*/
   font-size: var(--copyright-font-size);
   display: block;
   /*margin-right: 150px;*/
   text-align: center;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   line-height: 80px;
   transition: background 0.2s, color 0.2s;
 }
 
 .social-icon-link:hover {
-  background: var(--primary-color);
+  /*background: var(--primary-color);*/
   color: var(--white-color);
 }
 
