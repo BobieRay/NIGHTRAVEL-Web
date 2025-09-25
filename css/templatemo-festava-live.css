@@ -108,7 +108,7 @@ h6 {
 }
 
 p {
-    color: var(--p-color);
+    color: white;
     font-size: var(--p-font-size);
     /*font-weight: var(--font-weight-light);*/
     font-weight: var(--font-weight-bold);
@@ -385,17 +385,21 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-    background-color: var(--dark-color);
+    background-color: black;
 }
 
 .navbar {
     background: transparent;
     z-index: 9;
+
+    display: flex;             /* flexbox */
+    justify-content: space-between;
+    align-items: center;       /* 中央揃え */
 }
 
 .navbar-brand,
 .navbar-brand:hover {
-    color: var(--white-color);
+    color: white;
     font-size: var(--h5-font-size);
     font-weight: var(--font-weight-bold);
 }
@@ -408,7 +412,7 @@ strong {
 
 .navbar-nav .nav-link {
     display: inline-block;
-    color: var(--white-color);
+    color: white;
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-normal);
     position: relative;
@@ -428,8 +432,10 @@ strong {
     margin: 0;
     width: 30px;
     height: 30px;
-    margin-top: auto;
     outline: none;
+    display: flex;
+    align-items: center;       /* アイコンを縦中央 */
+    justify-content: center;
 }
 
 .navbar-toggler:focus {
@@ -560,14 +566,13 @@ strong {
     align-items: center;
     width: 70px;
     height: 70px;
-    background-color: #000;
     border-radius: 50%;
     text-decoration: none;
 }
 
 .hero-section .social-icon-link img {
-    width: 80px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     display: block;
 }
@@ -622,13 +627,13 @@ strong {
 .about-image-icon {
     border-radius: var(--border-radius-medium);
     height: auto;
-    width: 30%;
+    width: 50%;
     margin-top: 0;
     /*margin-left: 100px;*/
 }
 
 .about-image-X-icon {
-    width: 80px;
+    max-width: 100px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -650,6 +655,12 @@ strong {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 影で立体感 */
     transform: scale(1.05); /* ホバーで少し拡大 */
+}
+.about-image-X-icon:hover{
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0); /* 影で立体感 */
+    transform: scale(1.10); /* ホバーで少し拡大 */
 }
 
 .about-text-wrap {
@@ -830,6 +841,7 @@ strong {
 }
 
 button {
+    position: relative;
     padding: 16px 32px;
     font-size: 20px;
     font-weight: bold;
@@ -847,17 +859,28 @@ button {
 
 /* フッター */
 .footer {
-    padding: 25px; /* パディングを少し調整 */
+    padding: 5px; /* パディングを少し調整 */
     text-align: center;
     margin: 0 auto;
 }
 
 .footer img {
-    width: 20%;
+    max-width: 300px;
     height: auto;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+    border-radius: var(--border-radius-small);
+}
+.footer img:hover{
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 影で立体感 */
+    transform: scale(1.05); /* ホバーで少し拡大 */
+}
+
+.contact.copyright{
+    color: white;
 }
 
 /*--------------------------------
@@ -865,7 +888,7 @@ button {
 ---------------------------------*/
 .contact {
     text-align: center;
-    padding: 100px 0;
+    padding: 10px 0 0 0;
     margin: 0 auto;
     background-color: gray;
     height: auto;
@@ -883,15 +906,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* ← 画像同士の間隔 */
+    gap: 10px; /* ← 画像同士の間隔 */
     flex-wrap: wrap; /* ← スマホでも折り返し可能に */
 }
 
 .contact .date-wrap {
     display: inline-block !important;
     width: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    margin-top: 10px;!important;
 }
 
 .contact .date-wrap a {
@@ -912,8 +934,8 @@ button {
 
 .spec-section {
     background: #f8f8f8;
-    padding: 40px 20px;
-    max-width: 800px;
+    padding: 5px 10px;
+    max-width: 600px;
     margin: 0 auto;
     border-radius: 8px;
     font-family: 'Helvetica Neue', sans-serif;
@@ -922,7 +944,7 @@ button {
 .spec-section h2 {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     letter-spacing: 2px;
 }
 
@@ -948,8 +970,9 @@ button {
  フッター
 ---------------------------------*/
 .footer {
-    padding: 30px;
-    background-color: white;
+    padding: 10px;
+
+    /*background-color: white;*/
 }
 
 .copyright {
@@ -960,7 +983,7 @@ button {
 
 button:hover {
     transform: scale(1.05); /* ホバーで少し拡大 */
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.4);
     justify-content: center;
     text-align: center;
 }
@@ -1008,6 +1031,10 @@ button:hover {
     max-width: 100%;
 !important;
     height: auto;
+}
+.artists-image-wrap button {
+    position: relative;
+    z-index: 5; /* 最前面 */
 }
 
 .artists-thumb:hover .artists-hover {
@@ -1285,7 +1312,7 @@ button:hover {
 -----------------------------------------*/
 .social-icon {
     margin: 0;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .social-icon-item {
@@ -1295,7 +1322,7 @@ button:hover {
 }
 
 .social-icon-link {
-    background: black;
+    /*background: black;*/
     border-radius: var(--border-radius-large);
     /*color: var(--white-color);*/
     font-size: var(--copyright-font-size);
@@ -1312,7 +1339,7 @@ button:hover {
 
 .social-icon-link:hover {
     /*background: var(--primary-color);*/
-    color: var(--white-color);
+    /*color: var(--white-color);*/
 }
 
 .social-icon-link span {
@@ -1329,7 +1356,7 @@ button:hover {
 }
 
 .social-icon-link span:hover::before {
-    animation: spinAround 2s linear infinite;
+    /*animation: spinAround 2s linear infinite;*/
 }
 
 @keyframes spinAround {
@@ -1376,7 +1403,7 @@ button:hover {
     }
 
     .navbar {
-        background-color: var(--dark-color);
+        background-color: black;
     }
 
     .navbar-expand-lg .navbar-nav {
@@ -1415,6 +1442,26 @@ button:hover {
 
     .ticket-form {
         padding: 30px;
+    }
+    /* PCやタブレットでは横並び */
+    .genre .break {
+        display: inline;
+    }
+
+    /* スマホ（幅768px以下）のときだけ縦並びにする */
+    @media (max-width: 768px) {
+        .genre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size:15px ;
+        }
+
+        .genre .break {
+            display: block;   /* 改行される */
+            margin: 4px 0;    /* 行間を少し空ける（任意） */
+        }
     }
 
 
