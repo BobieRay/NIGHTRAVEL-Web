@@ -603,7 +603,7 @@ strong {
 .about-image-剣士 {
     border-radius: var(--border-radius-medium);
     max-width: 100%;
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -1038,8 +1038,8 @@ button:hover {
 }
 
 .artists-thumb:hover .artists-hover {
-    transform: translateY(0);
-    opacity: 1;
+    /*transform: translateY(0);
+    opacity: 1;*/
 }
 
 
@@ -1052,18 +1052,22 @@ button:hover {
     margin: 40px;
     padding: 35px;
     transition: all 0.5s ease;
-    transform: translateY(100%);
+    /*transform: translateY(100%);*/
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     right: 0;
     left: 0;
-    opacity: 0;
+    /*opacity: 0;*/
+}
+.artists-hover p{
+    color: black;
 }
 
 .artists-hover p strong {
     color: var(--white-color);
     display: inline-block;
     min-width: 180px;
+    text-align: center;
     margin-right: 20px;
 }
 
