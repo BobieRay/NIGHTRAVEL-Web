@@ -1124,6 +1124,73 @@ button:hover {
     margin: 1.5rem 0;
 }
 
+.relic-section {
+    background: rgba(10, 10, 20, 0.6);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 80px 0;
+}
+
+.relic-carousel {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr); /* PCで横4枚 */
+    grid-template-rows: repeat(2, auto);   /* 縦2段 */
+    padding-bottom: 20px;
+}
+
+/* スマホ用（768px以下） */
+@media (max-width: 768px) {
+    .relic-carousel {
+        grid-template-columns: repeat(2, 1fr); /* スマホで横2枚 */
+        gap: 16px;
+    }
+}
+
+.relic-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: rgba(30,30,50,0.7);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.relic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.relic-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.relic-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.relic-rarity {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rarity-common { color: #aaa; }
+.rarity-uncommon { color: #00bfff; }
+.rarity-unique { color: #ff66ff; }
+.rarity-boss { color: #ffcc00; }
+
+.relic-effect {
+    font-size: 0.9rem;
+    color: #ddd;
+}
 
 /*---------------------------------------
   SCHEDULE              
