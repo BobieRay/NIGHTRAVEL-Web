@@ -1125,7 +1125,7 @@ button:hover {
 }
 
 .relic-section {
-    background: rgba(10, 10, 20, 0.6);
+    background: black;
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255,255,255,0.1);
     padding: 80px 0;
@@ -1133,29 +1133,18 @@ button:hover {
 
 .relic-carousel {
     display: grid;
+    grid-template-columns: repeat(4, 1fr); /* PCでは横4 */
     gap: 24px;
-    grid-template-columns: repeat(4, 1fr); /* PCで横4枚 */
-    grid-template-rows: repeat(2, auto);   /* 縦2段 */
-    padding-bottom: 20px;
-}
-
-/* スマホ用（768px以下） */
-@media (max-width: 768px) {
-    .relic-carousel {
-        grid-template-columns: repeat(2, 1fr); /* スマホで横2枚 */
-        gap: 16px;
-    }
+    justify-items: center;
 }
 
 .relic-card {
-    flex: 0 0 auto;
-    width: 250px;
+    width: 230px;
     background: rgba(30,30,50,0.7);
     border-radius: 16px;
     padding: 20px;
     text-align: center;
     color: #fff;
-    scroll-snap-align: start;
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -1182,14 +1171,46 @@ button:hover {
     margin-bottom: 5px;
 }
 
-.rarity-common { color: #aaa; }
-.rarity-uncommon { color: #00bfff; }
-.rarity-unique { color: #ff66ff; }
-.rarity-boss { color: #ffcc00; }
+.rarity-コモン { color: #aaa; }
+.rarity-アンコモン { color: #00bfff; }
+.rarity-ユニーク { color: #ff66ff; }
+.rarity-ボス { color: #ffcc00; }
 
 .relic-effect {
     font-size: 0.9rem;
     color: #ddd;
+}
+
+/* 📱 スマホ対応（768px以下） */
+@media screen and (max-width: 768px) {
+    .relic-carousel {
+        grid-template-columns: repeat(2, 1fr); /* 横2 */
+        gap: 16px;
+    }
+
+    .relic-card {
+        width: 150px;        /* カード幅を小さく */
+        padding: 10px;       /* 内側余白を減らす */
+        border-radius: 10px; /* 角を少し丸く */
+    }
+
+    .relic-image {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 6px;
+    }
+
+    .relic-name {
+        font-size: 1rem;
+    }
+
+    .relic-rarity {
+        font-size: 0.9rem;
+    }
+
+    .relic-effect {
+        font-size: 0.8rem;
+    }
 }
 
 /*---------------------------------------
