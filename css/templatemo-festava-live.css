@@ -770,7 +770,9 @@ strong {
     flex-direction: column;
     justify-content: center;
 }
-
+/*--------------------------------
+ モーダル
+---------------------------------*/
 .modal {
     display: none;
     /*position: fixed;*/
@@ -858,7 +860,9 @@ button {
 
 }
 
-/* フッター */
+/*--------------------------------
+ フッター
+---------------------------------*/
 .footer {
     padding: 5px; /* パディングを少し調整 */
     text-align: center;
@@ -981,7 +985,9 @@ button {
     text-align: center;
     color: #797979;
 }
-
+/*--------------------------------
+ 敵一覧ボタン
+---------------------------------*/
 button:hover {
     transform: scale(1.05); /* ホバーで少し拡大 */
     box-shadow: 0 10px 14px rgba(0, 0, 0, 0.4);
@@ -1069,7 +1075,10 @@ button:hover {
     display: inline-block;
     min-width: 180px;
     text-align: center;
-    margin-right: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
 }
 
 .artists-hover p a {
@@ -1109,7 +1118,11 @@ button:hover {
     display: inline-block;
     min-width: 180px;
     text-align: center;
-    margin-right: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
 }
 
 .artists-hover-Gunner p a {
@@ -1124,6 +1137,9 @@ button:hover {
     margin: 1.5rem 0;
 }
 
+/*--------------------------------
+ レリック
+---------------------------------*/
 .relic-section {
     background: black;
     backdrop-filter: blur(10px);
@@ -1212,6 +1228,98 @@ button:hover {
         font-size: 0.8rem;
     }
 }
+/*--------------------------------
+ デベロッパー（レリック風）
+---------------------------------*/
+.developers-section {
+    background: black;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.developer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* PC: 横4 */
+    gap: 24px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.developer-item {
+    width: 300px;                 /* 横幅固定 */
+    height: 180px;                /* 高さ固定 */
+    background: rgba(30,30,50,0.7);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ホバー時 */
+.developer-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* PC: 横4列 */
+.developer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 名前 */
+.developer-name {
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* 最小1rem～最大1.4rem、画面幅に応じて自動 */
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* 役職 */
+.developer-role {
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem); /* 最小0.8rem～最大1.1rem、画面幅に応じて自動 */
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* タブレット: 横2列 */
+@media screen and (max-width: 768px) {
+    .developer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .developer-item {
+        width: 180px;
+        height: 140px;
+        padding: 15px;
+    }
+}
+
+/* スマホ: 横1列 */
+@media screen and (max-width: 480px) {
+    .developer-container {
+        grid-template-columns: 1fr;
+    }
+    .developer-item {
+        width: 100%;
+        height: auto; /* 自動調整 */
+        padding: 12px;
+    }
+}
+
 
 /*---------------------------------------
   SCHEDULE              
