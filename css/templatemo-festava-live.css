@@ -738,19 +738,18 @@ strong {
 .artists-thumb {
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     width: 80%;
     height: auto;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .artists-thumb-剣士 {
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     display: flex;
     /*width: 80%;*/
     height: auto;
@@ -762,13 +761,14 @@ strong {
 .artists-thumb-ガンナー {
     position: relative;
     overflow: hidden;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     /*margin-left: 100px;*/
     display: flex;
     /*width: 85%;*/
     height: auto;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 /*--------------------------------
  モーダル
@@ -1038,7 +1038,7 @@ button:hover {
 !important;
     max-width: 100%;
 !important;
-    height: auto;
+    height: 100%;
 }
 .artists-image-wrap button {
     position: relative;
@@ -1069,6 +1069,10 @@ button:hover {
 }
 .artists-hover p{
     color: black;
+    margin-left: -20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .artists-hover p strong {
@@ -1105,13 +1109,17 @@ button:hover {
     transition: all 0.5s ease;
     /*transform: translateY(100%);*/
     position: absolute;
-    bottom: 55px;
+    bottom: 90px;
     right: 0;
     left: 0;
     /*opacity: 0;*/
 }
 .artists-hover-Gunner p{
     color: black;
+    margin-left: -20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .artists-hover-Gunner p strong {
@@ -1122,7 +1130,6 @@ button:hover {
     justify-items: center;
     justify-content: center;
     align-items: center;
-    /*margin-left: 30px;*/
     font-size: 20px;
 }
 
@@ -1264,6 +1271,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 /* ホバー時 */
@@ -1697,7 +1705,7 @@ button:hover {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            font-size:15px ;
+            font-size:14px ;
         }
 
         .genre .break {

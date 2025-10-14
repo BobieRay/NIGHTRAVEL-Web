@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {name: "Rui Enomoto", role: "クライアント開発"},
         {name: "Kyosuke Kawaguchi", role: "キャラクター・UI・ビジュアル・グラフィックデザイナー <br>キャラクターアニメーション"},
         {name: "Kosuke Kida", role: "サーバー開発・設計"},
-        {name: "Yuuto Takamiya", role: "デザイナー<br>Web開発エンジニア"},
+        {name: "Yuuto Takamiya", role: "キャラクターデザイナー<br>Web開発エンジニア"},
         {name: "Kenta Nakamoto", role: "クライアント開発"},
         {name: "Kouta Nishiura", role: "プランナー<br>ギミック・ステージ設計<br>リアルタイムAPI開発"},
         {name: "Yuki Miura", role: "ギミック設計"},
