@@ -1204,6 +1204,32 @@ button:hover {
     font-size: 0.9rem;
     color: #ddd;
 }
+/* 💻 iPad / タブレット対応（768px〜991px） */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .relic-carousel {
+        grid-template-columns: repeat(2, 1fr); /* 横2列に */
+        justify-items: center; /* カードを中央に整列 */
+        gap: 20px;
+    }
+
+    .relic-card {
+        width: 200px;  /* 少し小さめにしてバランス調整 */
+        padding: 15px;
+    }
+
+    .relic-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .relic-name {
+        font-size: 1.1rem;
+    }
+
+    .relic-effect {
+        font-size: 0.85rem;
+    }
+}
 
 /* 📱 スマホ対応（768px以下） */
 @media screen and (max-width: 768px) {
@@ -1255,6 +1281,7 @@ button:hover {
     justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 0;
 }
 
 .developer-item {
@@ -1280,16 +1307,6 @@ button:hover {
     box-shadow: 0 0 20px rgba(0,255,255,0.3);
 }
 
-/* PC: 横4列 */
-.developer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* 名前 */
 .developer-name {
     font-weight: 700;
@@ -1306,14 +1323,50 @@ button:hover {
 }
 
 /* タブレット: 横2列 */
-@media screen and (max-width: 768px) {
-    .developer-container {
-        grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 768px)and (max-width: 1199px) {
+    .developers-section .container {
+        max-width: none !important;
+        padding: 0 !important;
     }
+
+    .developers-section .row {
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+    }
+
+    .developer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start !important;
+        justify-items: flex-start !important;
+        align-items: start;
+        gap: 20px;
+        margin-left: -100px !important; /* 左余白を少しだけ確保 */
+    }
+
     .developer-item {
-        width: 180px;
-        height: 140px;
+        width: 200px;
+        height: 200px;
         padding: 15px;
+    }
+}
+
+/* ✅ iPad Pro 対応（1024px〜1366px） */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .developer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* PCと同じ4列 */
+        justify-content: center; /* 🔹中央寄せ */
+        justify-items: center;   /* 🔹各カードも中央 */
+        margin: 0 auto;          /* 🔹左右中央揃え */
+        width: 100%;
+        max-width: 1200px;       /* 🔹必要に応じて調整 */
+    }
+
+    .developer-item {
+        width: 240px;
+        height: 170px;
+        margin-left: 200px;
     }
 }
 
