@@ -1213,8 +1213,9 @@ button:hover {
     }
 
     .relic-card {
-        width: 200px;  /* 少し小さめにしてバランス調整 */
+        width: 260px;  /* 少し小さめにしてバランス調整 */
         padding: 15px;
+        justify-content: center;
     }
 
     .relic-image {
@@ -1364,9 +1365,9 @@ button:hover {
     }
 
     .developer-item {
-        width: 240px;
+        width: 250px;
         height: 170px;
-        margin-left: 200px;
+        margin-left: 220px;
     }
 }
 
