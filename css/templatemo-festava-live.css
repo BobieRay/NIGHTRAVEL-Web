@@ -1213,7 +1213,7 @@ button:hover {
     }
 
     .relic-card {
-        width: 260px;  /* 少し小さめにしてバランス調整 */
+        width: 290px;  /* 少し小さめにしてバランス調整 */
         padding: 15px;
         justify-content: center;
     }
