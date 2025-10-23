@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {name: "Kenta Nakamoto", role: "クライアント開発"},
         {name: "Kouta Nishiura", role: "プランナー<br>ギミック・ステージ設計<br>リアルタイムAPI開発"},
         {name: "Yuki Miura", role: "ギミック設計"},
-        {name: "Keigo Huzisaki", role: "ボーンアニメーション"},
+        {name: "Keigo Fujisaki", role: "ボーンアニメーション"},
         {name: "Ayuto Miyake", role: "ボーンアニメーション<br> テストプレイ"}
     ];
 
